@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+    <style>
+      body {
+        background-color: #add8e6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+      .container {
+        background-color: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px #888888;
+        text-align: center;
+      }
+      img {
+        width: 100px;
+        margin-bottom: 30px;
+      }
+      input[type="text"], input[type="password"] {
+        padding: 10px;
+        font-size: 16px;
+        margin-bottom: 20px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        box-shadow: 0 0 10px #888888;
+      }
+      input[type="submit"] {
+        background-color: #add8e6;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+      input[type="submit"]:hover {
+        background-color: #708090;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <img src="car-logo.png" alt="Car Logo">
+      <form onsubmit="return false" >
+        <input type="text" placeholder="Username">
+        <input type="password" placeholder="Password">
+        <input pys-onClick="sub" type="submit" value="Login">
+      </form>
+    </div>
+  </body>
+</html>
